@@ -5,11 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/styles.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 
-        <title>Responsive bottom navigation</title>
+        <title>RepTile</title>
     </head>
     <body>
         <!--=============== HEADER ===============-->
@@ -43,7 +45,7 @@
                         <li class="nav__item">
                             <a href="#portfolio" class="nav__link">
                                 <i class='material-icons makeWhite'>account_circle</i>
-                                <span class="nav__name makeWhite">Profile</span>
+                                <span class="nav__name makeWhite">Account</span>
                             </a>
                         </li>
 
@@ -64,7 +66,21 @@
             <!--=============== HOME ===============-->
             <section class="container section section__height" id="home">
                 <h2 class="section__title">Home</h2>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p>Welcome to Rep-Tile!</p>
+                <br>
+                <br>
+                <p>RepTile is a simple to use gym tracking app</p>
+                <br>
+                <br>
+                <p>Click the button below to log a new workout!</p>
 
+                <div class="nwDiv" id="nwDivId">
+                    <button id="nwBtn">New Workout</button>
+                </div>
                 
 
 
@@ -75,16 +91,79 @@
             <!--=============== ABOUT ===============-->
             <section class="container section section__height" id="about">
                 <h2 class="section__title">Workouts</h2>
+
+                <div id="workouts">
+                    <div class="workout">
+                        <h3 id="lastWorkout">Last Workout</h3>
+                    </div>
+                </div>
+
+                <div class="vwDiv" id="vwDivId">
+                    <button id="vwBtn">View All</button>
+                </div>
+
+
+               
+
+
+
+
+
+
             </section>
 
             <!--=============== SKILLS ===============-->
             <section class="container section section__height" id="skills">
                 <h2 class="section__title">Statistics</h2>
+                <br>
+                <br>
+                <p class="statsP">Total Weight Lifted: &emsp;&emsp;&emsp;&emsp;&emsp; 1723kg</p>
+                <br>
+                <p class="statsP">Total Reps Counted: &emsp;&emsp;&emsp;&emsp;&emsp; 324kg</p>
+                <br>
+                <p class="statsP">Average Sets Per Week: &emsp;&emsp;&emsp;&emsp;&emsp; 22</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p class="statsP">This Week:</p>
+                <br>
+                <br>
+
+                <div id="greenDisplays">
+
+                    <div id="gymVisits">
+                        <p class="biggerFont">5</p>
+                        <p class="makeWhite">Gym Visits</p>
+                    </div>
+    
+                    <div id="gymTime">
+                        <p class="biggerFont">5hr 32m</p>
+                        <p class="makeWhite">Workout Time</p>
+                    </div>
+                </div>
+                <br><br><br><br><br>
+
+                <div id="visitsDisplay">
+
+                    <div id="totalVisitsDiv">
+                        <p class="statsP">Total Gym Visits:</p>
+                        <br><br>
+                        <p class="biggerFont" id="numOfTotalVisits">172</p>
+                    </div>
+    
+
+                </div>
+
+                
+
+                
+
             </section>
 
             <!--=============== PORTFOLIO ===============-->
             <section class="container section section__height" id="portfolio">
-                <h2 class="section__title">Profile</h2>
+                <h2 class="section__title">Account</h2>
             </section>
 
             <!--=============== CONTACTME ===============-->

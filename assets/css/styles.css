@@ -3,8 +3,11 @@
 :root {
   --header-height: 3rem;
 
-  --reptile-body: #007057;
+  --reptile-body: #201D1E;
   --reptile-grey: #2F3532;
+  --reptile-button: #089F6A;
+  --reptile-button-Grn: #20C78C;
+  /* 3C7EBC */
   --hue: 174;
   --sat: 63%;
   --first-color: hsl(var(--hue), var(--sat), 40%);
@@ -36,7 +39,19 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Outfit', sans-serif;
+
 }
+
+.makeWhite {
+  color: white;
+}
+
+.biggerFont {
+  font-size: 27px;
+  color: white;
+}
+
 
 html {
   scroll-behavior: smooth;
@@ -54,11 +69,14 @@ ul {
   list-style: none;
 }
 
-.makeWhite {
-  color: white;
+
+
+
+
+p {
+  color: rgb(189, 180, 181);
+  font-weight: bolder;
 }
-
-
 
 
 a {
@@ -70,14 +88,14 @@ img {
   height: auto;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+
 .section {
   padding: 4.5rem 0 2rem;
 }
 
 .section__title {
   font-size: var(--h1-font-size);
-  color: var(--title-color);
+  color: white;
   text-align: center;
   margin-bottom: 1.5rem;
 }
@@ -160,6 +178,8 @@ img {
   
 }
 
+
+
 .nav__icon {
   font-size: 1.5rem;
 }
@@ -170,6 +190,120 @@ img {
   color: var(--first-color);
   transition: .3s;
 }
+
+/*=============== Home page ===============*/
+
+.nwDiv {
+  text-align: center;
+}
+
+#nwDivId {
+  position: relative;
+  top: 25%;
+}
+
+#nwBtn {
+  height: 85px;
+  width: 220px;
+  border-radius: 40px;
+  border: none;
+  background-color: var(--reptile-button);
+  font-size: larger ;
+  color: #FFF;
+}
+
+/*=============== Workout page ===============*/
+
+
+#workouts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.workout {
+  background-color: #ffffff0e;
+  width: 80%;
+  height: 450px;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+#vwBtn {
+  height: 85px;
+  width: 200px;
+  border-radius: 40px;
+  border: none;
+  background-color: var(--reptile-button);
+  color: #FFF;
+  font-size: larger ;
+}
+
+#vwDivId {
+  position: relative;
+  top: 8%;
+}
+
+.vwDiv {
+  text-align: center  ;
+}
+
+#lastWorkout {
+  text-align: center;
+  color: rgb(189, 180, 181);
+}
+
+
+/*=============== STATISTICS PAGE ===============*/
+
+.statsP {
+  font-size: larger;
+  text-align: center;
+}
+
+#gymVisits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #089F6A;
+}
+
+
+#gymTime {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #089F6A;
+}
+
+#greenDisplays {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+#greenDisplays div {
+  padding: 15px;
+  width: 40%;
+  border-radius: 20px;
+}
+
+
+#visitsDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#numOfTotalVisits {
+  text-align: center;
+}
+
+
 
 
 
