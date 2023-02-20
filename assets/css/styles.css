@@ -7,40 +7,23 @@
   --reptile-grey: #2F3532;
   --reptile-button: #089F6A;
   --reptile-button-Grn: #20C78C;
-  /* 3C7EBC */
-  --hue: 174;
-  --sat: 63%;
-  --first-color: hsl(var(--hue), var(--sat), 40%);
-  --first-color-alt: hsl(var(--hue), var(--sat), 36%);
-  --title-color: hsl(var(--hue), 12%, 15%);
-  --text-color: hsl(var(--hue), 8%, 35%);
-  --body-color: hsl(var(--hue), 100%, 99%);
-  --container-color: #FFF;
-
-
-  --body-font: 'Open Sans', sans-serif;
+  --reptile-button-Blu: #41A49D;
+  
+  --body-font: 'Outfit', sans-serif;
   --h1-font-size: 1.5rem;
   --normal-font-size: .938rem;
   --tiny-font-size: .625rem;
-
   --z-tooltip: 10;
   --z-fixed: 100;
 }
 
-@media screen and (min-width: 968px) {
-  :root {
-    --h1-font-size: 2.25rem;
-    --normal-font-size: 1rem;
-  }
-}
-
 /*=============== BASE ===============*/
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: 'Outfit', sans-serif;
-
 }
 
 .makeWhite {
@@ -51,7 +34,6 @@
   font-size: 27px;
   color: white;
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -69,15 +51,10 @@ ul {
   list-style: none;
 }
 
-
-
-
-
 p {
   color: rgb(189, 180, 181);
   font-weight: bolder;
 }
-
 
 a {
   text-decoration: none;
@@ -87,7 +64,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 
 .section {
   padding: 4.5rem 0 2rem;
@@ -104,7 +80,9 @@ img {
   height: 100vh;
 }
 
+
 /*=============== LAYOUT ===============*/
+
 .container {
   max-width: 968px;
   margin-left: 1rem;
@@ -112,6 +90,7 @@ img {
 }
 
 /*=============== HEADER ===============*/
+
 .header {
   position: fixed;
   top: 0;
@@ -123,37 +102,12 @@ img {
 }
 
 /*=============== NAV ===============*/
+
 .nav {
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.nav__img {
-  width: 32px;
-  border-radius: 50%;
-}
-
-.nav__logo {
-  color: var(--title-color);
-  font-weight: 600;
-}
-
-@media screen and (max-width: 767px) {
-  .nav__menu {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: var(--reptile-grey);
-    box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
-    width: 100%;
-    height: 4rem;
-    padding: 0 1rem;
-    display: grid;
-    align-content: center;
-    transition: .4s;
-  }
 }
 
 .nav__list, 
@@ -178,13 +132,6 @@ img {
   
 }
 
-
-
-.nav__icon {
-  font-size: 1.5rem;
-}
-
-
 .active-link {
   position: relative;
   color: var(--first-color);
@@ -193,13 +140,10 @@ img {
 
 /*=============== Home page ===============*/
 
-.nwDiv {
-  text-align: center;
-}
-
 #nwDivId {
   position: relative;
   top: 25%;
+  text-align: center;
 }
 
 #nwBtn {
@@ -213,7 +157,6 @@ img {
 }
 
 /*=============== Workout page ===============*/
-
 
 #workouts {
   display: flex;
@@ -242,9 +185,6 @@ img {
 #vwDivId {
   position: relative;
   top: 8%;
-}
-
-.vwDiv {
   text-align: center  ;
 }
 
@@ -252,7 +192,6 @@ img {
   text-align: center;
   color: rgb(189, 180, 181);
 }
-
 
 /*=============== STATISTICS PAGE ===============*/
 
@@ -269,7 +208,6 @@ img {
   gap: 10px;
   background-color: #089F6A;
 }
-
 
 #gymTime {
   display: flex;
@@ -292,7 +230,6 @@ img {
   border-radius: 20px;
 }
 
-
 #visitsDisplay {
   display: flex;
   justify-content: center;
@@ -303,12 +240,184 @@ img {
   text-align: center;
 }
 
+/*=============== ACCOUNT PAGE ===============*/
 
+.goals {
+  background-color: var(--reptile-button-Blu);
+}
 
+#goal1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
 
+#goal2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#goal3Div {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+#goal3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 64px;
+  width: 40%;
+  gap: 10px;
+  border-radius: 20px;
+}
+
+#premiumBtn {
+  height: 85px;
+  width: 280px;
+  border-radius: 40px;
+  border: none;
+  background-color: var(--reptile-button);
+  color: #FFF;
+  font-size: larger ;
+}
+
+#premiumDiv {
+  position: relative;
+  top: 8%;
+  text-align: center  ;
+}
+
+.goalsFont {
+  font-size: 20px;
+  color: #FFF;
+}
+
+/*=============== SETTINGS PAGE ===============*/
+
+.settingsP {
+  font-size: larger;
+}
+
+#greenBtn {
+  background-color: var(--reptile-button-Grn);
+  width: 80px;
+  height:20px;
+}
+
+#blueBtn {
+  background-color: var(--reptile-button-Blu);
+  width: 80px;
+  height:20px;
+}
+
+#colourThemeDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+#changeGoalsBtn {
+  height: 70px;
+  width: 170px;
+  border-radius: 40px;
+  border: none;
+  background-color: var(--reptile-button);
+  color: #FFF;
+  font-size: larger ;
+}
+
+#resetStatsBtn {
+  height: 70px;
+  width: 170px;
+  border-radius: 40px;
+  border: none;
+  background-color: var(--reptile-button);
+  color: #FFF;
+  font-size: larger ;
+}
+
+#ManageSubBtn {
+  
+  width: 50%;
+  padding: 5%;
+  border-radius: 40px;
+  border: none;
+  background-color: var(--reptile-button);
+  color: #FFF;
+  font-size: larger ;
+}
+
+#logOutBtn {
+  height: 85px;
+  width: 200px;
+  border-radius: 40px;
+  border: none;
+  background-color: rgb(128, 22, 22);
+  color: #FFF;
+  font-size: larger ;
+}
+
+#logOutDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.settingsBtns {
+  display: flex;
+}
+
+.settingsButtons {
+  background-color: var(--reptile-button-Grn);
+}
+
+#settingsDisplays {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+#greenDisplays div {
+  padding: 15px;
+  width: 40%;
+  border-radius: 20px;
+}
 
 .scroll-header {
   box-shadow: 0 1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
+}
+
+/*=============== MEDIA QUERIES ===============*/
+
+@media screen and (min-width: 968px) {
+  :root {
+    --h1-font-size: 2.25rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: var(--reptile-grey);
+    box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
+    width: 100%;
+    height: 4rem;
+    padding: 0 1rem;
+    display: grid;
+    align-content: center;
+    transition: .4s;
+  }
 }
 
 @media screen and (max-width: 320px) {
