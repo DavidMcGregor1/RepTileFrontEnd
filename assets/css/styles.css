@@ -30,6 +30,10 @@
   color: white;
 }
 
+.makeGreen {
+  color: var(--reptile-button);
+}
+
 .biggerFont {
   font-size: 27px;
   color: white;
@@ -168,7 +172,12 @@ img {
   border-radius: 25px;
 }
 
-#pastWorkouts {
+.workoutH2 {
+  /* background-color: #288f51; */
+  background-color: var(--reptile-button);
+}
+
+.pastWorkouts {
   display: grid;
   grid-template-rows: auto 1fr;
 }
@@ -176,7 +185,7 @@ img {
 #past-workouts {
   display: flex;
   align-items: center;
-  background-color: #089F6A;
+  background-color: #333333;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
@@ -424,6 +433,18 @@ img {
   height: 100%;
 }
 
+#nextArrow {
+  color: var(--reptile-button);
+}
+
+#prevArrow {
+  color: var(--reptile-button);
+}
+
+#bottomBlobs {
+  color: var(--reptile-button);
+}
+
 #outer {
   display: grid;
   grid-template-rows: auto 1fr;
@@ -446,6 +467,7 @@ img {
   height: 100%;
   object-fit: cover;
 }
+
 
 .swiper {
   margin-left: auto;
