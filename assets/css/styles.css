@@ -158,18 +158,40 @@ img {
 
 /*=============== Workout page ===============*/
 
-#workouts {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 
 .workout {
+  overflow-y: scroll;
   background-color: #ffffff0e;
-  width: 80%;
+  /* width: 80%;
   height: 450px;
-  padding: 25px;
+  padding: 25px; */
   border-radius: 25px;
+}
+
+#pastWorkouts {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+#past-workouts {
+  display: flex;
+  align-items: center;
+  background-color: #089F6A;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+  padding: 10px;
+  overflow-y: scroll;
+  height: 365px;
+  
+}
+
+.workout p {
+  width: 40%;
+  outline: 1px solid lightgray;
+  margin: 0;
+  padding: 10px;
 }
 
 #vwBtn {
@@ -394,6 +416,43 @@ img {
 .scroll-header {
   box-shadow: 0 1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
 }
+
+/*=============== Swiper ===============*/
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+#outer {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 400px;
+  width: 300px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 
 /*=============== MEDIA QUERIES ===============*/
 

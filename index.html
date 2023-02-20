@@ -10,6 +10,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/styles.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
 
         <title>RepTile</title>
     </head>
@@ -85,9 +87,61 @@
                 <h2 class="section__title">Workouts</h2>
 
                 <div id="workouts">
-                    <div class="workout">
+
+
+                    <!-- <div class="workout">
                         <h3 id="lastWorkout">Last Workout</h3>
-                    </div>
+                    </div> -->
+
+
+
+
+                    <div id="outer" class="swiper mySwiper workout">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div id="pastWorkouts">
+                                <h2>Workout Title</h2>
+                                <div id="past-workouts">
+                                    <p>Exercise x 10kg</p>
+                                    <p>Exercise x 10kg</p>
+                                    <p>Exercise x 10kg</p>
+                                    <p>Exercise x 10kg</p>
+                                    <p>Exercise x 10kg</p>
+                                    <p>Exercise x 10kg</p>
+                                    <p>Exercise x 10kg</p>
+                                    <p>Exercise x 10kg</p>
+                                    <p>Exercise x 10kg</p>
+                                    <p>Exercise x 10kg</p>
+                                    <p>Exercise x 10kg</p>
+                                </div>
+                            </div>
+
+                           
+                          </div>
+
+                          <div class="swiper-slide">Workout Title</div>
+
+                          <div class="swiper-slide">Workout Title</div>
+
+                          <div class="swiper-slide">Workout Title</div>
+
+                          <div class="swiper-slide">Workout Title</div>
+
+                          <div class="swiper-slide">Workout Title</div>
+
+                          <div class="swiper-slide">Workout Title</div>
+
+                          <div class="swiper-slide">Workout Title</div>
+
+                          <div class="swiper-slide">Workout Title</div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+
+
+
                 </div>
 
                 <div id="vwDivId">
@@ -220,5 +274,28 @@
         </main>
 
         <script src="assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+        <!--=============== SCRIPT FOR WORKOUTS SLIDER ===============-->
+
+<script>
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+</script>
+
     </body>
 </html>
